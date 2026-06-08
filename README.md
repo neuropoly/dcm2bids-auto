@@ -99,6 +99,35 @@ Several tools tackle the DICOM-to-BIDS problem from different angles:
 
 The key differentiator of this project relative to all of the above is the emphasis on **community data sharing at scale**: rather than each group training a model or writing rules on their own data, contributing stripped metadata from many sites and vendors into a shared resource allows the config to generalize far beyond what any single center could achieve.
 
+## Get Involved
+
+This project only works if people contribute — and contributing does not require writing any code. Every site that shares even a small sample of anonymized metadata makes the shared `config.json` more robust for everyone.
+
+**Who should get involved?**
+
+- MRI physicists and radiographers who manage scanner protocols at their site
+- Neuroimaging researchers who regularly convert DICOM data to BIDS
+- Research software engineers and data managers working with multi-site cohorts
+- Clinical researchers dealing with heterogeneous imaging archives
+- Anyone who has ever spent an afternoon writing a dcm2bids config file and thought: *there has to be a better way*
+
+**Ways to contribute — from easiest to most involved:**
+
+| What | How | Where |
+|---|---|---|
+| Tell us about your scanner / protocol setup | Open a [Discussion](../../discussions) | GitHub Discussions → *Show and tell* |
+| Report a sequence that is wrongly classified or missing | Open an [Issue](../../issues) | GitHub Issues → *bug* or *missing sequence* label |
+| Ask a question about anonymization, ethics, or the format | Open a [Discussion](../../discussions) | GitHub Discussions → *Q&A* |
+| Share anonymized metadata from your site | Open a pull request with your metadata file | See *How to Contribute* below |
+| Improve the rules or classifier for a specific vendor | Open a pull request with code + test case | See *How to Contribute* below |
+| Spread the word | Share with your lab, your BIDS user group, or your scanner vendor rep | Anywhere |
+
+**Not sure where to start?** Open a [Discussion](../../discussions) and describe your scanner setup (vendor, field strength, rough number of sequences in your neuro protocol). That alone is useful information and a good way to get oriented.
+
+**Have an existing dcm2bids config.json** from your site? That is exactly what this project needs. Open an issue or discussion and we will walk you through the anonymization steps together before it gets merged.
+
+The more sites contribute early, the faster the shared config reaches the coverage needed to be genuinely useful. If you are reading this and thinking *this would save us time*, please consider being one of the first contributors — early input has an outsized influence on the direction of the project.
+
 ## How to Contribute
 
 > Contribution guidelines are under development. The following is the intended workflow.
