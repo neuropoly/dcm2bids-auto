@@ -90,6 +90,7 @@ Several tools tackle the DICOM-to-BIDS problem from different angles:
 | [niix2bids](https://github.com/benoitberanger/niix2bids) | Automatic, NIfTI-based | No prior on filenames; Siemens-only; works on dcm2niix output |
 | [DeepDicomSort](https://github.com/Svdvoort/DeepDicomSort) | CNN on image content | No metadata needed; does not cover fMRI |
 | [scan_classifier](https://gitlab.com/abartnik/scan_classifier) (Bartnik et al. 2024) | XGBoost on DICOM metadata | >99% accuracy; full DICOM-to-BIDS pipeline; open model |
+| [AutoBIDSify](https://neurojson.org/Page/autobidsify) | LLM-based automatic BIDSification | Active, Very relevant. [2026 Workshop](https://neurostars.org/t/workshop-auto-bidsify-and-upcoming-training-workshop-march-26-zoom-based/35524) |
 
 **niix2bids** (Béranger) is the closest in spirit to this project: it operates fully automatically with no assumptions about input file naming, making it well-suited for heterogeneous clinical and multi-cohort data. It works on dcm2niix output (NIfTIs + JSON sidecars) and infers BIDS labels from the sidecar metadata. Its current limitation is that it supports only Siemens scanners.
 
